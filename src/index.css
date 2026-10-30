@@ -46,6 +46,7 @@ section {
 
 .info-img {
   max-width: 25px;
+  min-width: 15px;
   width: 75%;
   margin-right: 12px;
 }
@@ -125,4 +126,27 @@ select {
 
 .small-info {
   font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  .info-img {
+    margin-right: 4px;
+  }
+
+  .info div {
+    margin-right: 8px;
+  }
+
+  form {
+    width: 90%;
+    margin-bottom: 48px;
+  }
 }

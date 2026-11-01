@@ -66,7 +66,7 @@ section {
   color: var(--primary);
 }
 
-button {
+.url-button {
   background-color: var(--primary);
   color: var(--secondary);
   border: none;
@@ -76,9 +76,11 @@ button {
   border-radius: 16px;
   margin: 8px 0px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
-button:hover {
+.url-button:hover {
   background-color: #caa87c;
   transition: all 0.15s;
 }
@@ -128,6 +130,18 @@ select {
 
 .small-info {
   font-size: 14px;
+}
+
+.submit-btn {
+  width: 104%;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transition: all 0.15s;
 }
 
 @media screen and (max-width: 1024px) {

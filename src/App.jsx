@@ -10,6 +10,7 @@ export default function App() {
     stars: 0,
     forks: 0,
     issues: 0,
+    url: "",
   })
 
   return (
@@ -23,8 +24,7 @@ export default function App() {
           stars={repo.stars}
           forks={repo.forks}
           issues={repo.issues} />
-        <button>Go to repo</button>
-        <button>Refresh</button>
+        <a className="url-button" target="_blank" href={repo.url}>Go to repo</a>
       </section>
     </main>
   )

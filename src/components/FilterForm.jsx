@@ -38,7 +38,7 @@ export default function FilterForm({ setRepo }) {
       console.log(data)
       if (!data.items?.length) {
         return {
-          name: "no repo found",
+          name: "No Repo Found",
           description: "",
           language: "",
           stars: 0,
@@ -74,6 +74,7 @@ export default function FilterForm({ setRepo }) {
       try {
         const repoData = await fetchAPI()
         setRepo(repoData)
+        window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"})
       } catch (error) {
         console.error(error)
       }
